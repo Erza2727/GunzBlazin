@@ -6,9 +6,9 @@ export function laserGun(): void {
     addAnimationClass("laser-gun");
 
     for (let i = 0; i < 10; i++) {
-      addShot("laser", "laser-gun", 90, "left", i * 200);
+      addShot("laser", "laser-gun", 90, "left", i * 1000);
     }
 
-    publishTopicAfterXSeconds("laser_done", 2000);
+    publishTopicAfterXSeconds("laser_done", 6000);
   });
 }

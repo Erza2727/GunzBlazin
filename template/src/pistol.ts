@@ -6,7 +6,7 @@ export function pistol(): void {
 
   // 2. Fire 2 bullets
   addShot("bullet", "pistol", 90, "right", 0);
-  addShot("bullet", "pistol", 90, "right", 300);
+  addShot("bullet", "pistol", 90, "right", 600);
 
   // 3. Notify when done
   publishTopicAfterXSeconds("pistol_done", 1200);
